@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 13px 166px ;
+}
+#header .lefthead img{
+    height: 30px;
+}
+#header .righthead{
+    display: flex;
+    align-items: center;
+}
+#header .righthead ul{
+    display: flex;
+    text-decoration: none;
+    position: relative;
+}
+#header .righthead ul a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    font-size: 17px;
+    position: relative;
+}
+#header .righthead .menu{
+    color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    height: 63px;
+    width: 214px;
+    background-color: black;
+    display: none;
+}
+#header .righthead .menu li{
+    list-style: none;
+    margin-top: 7px;
+}
+#header .righthead  ul li:hover .menu{
+    display: flex;
+}
+#header .righthead ul a::before, ul a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: #ff9d8f;
+    transition: 0.5s;
+}
+#header .righthead ul a:hover{
+    color: #ff9d8f;
+}
+#header .righthead ul a::before{
+    bottom: -4px;
+    left: 50%;
+}
+#header .righthead ul a:hover::before{
+    left: 0;
+    width: 50%;
+}
+#header .righthead ul a::after{
+    bottom: -4px;
+    right: 50%;
+}
+#header .righthead ul a:hover::after{
+    width: 50%;
+    right: 0;
+}
+
+.section1{
+    background: #757f9a45;
+    display: flex;
+    align-items: center;
+}
+.section1, .section2, .section3, .section5{
+    padding: 20px 190px;
+}
+#mid .left, .right{
+    width: 50%;
+    text-align: center;
+    line-height: 3.5rem;
+}
+#mid .section1 .left img{
+    height: 57vh;
+}
+.section1 .right p{
+    font-size: 22px;
+}
+.section1 .right a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 26px;
+    border-radius: 5rem;
+}
+.section1 .right a:hover{
+    background-color: palevioletred;
+}
+.section2 p, h5, h4{
+    margin-top: 3rem;
+}
+.section2 h5{
+    font-size: 18px;
+}
+.section2 p{
+    font-size: 17.5px;
+}
+.section3{
+    background-color: rgba(245, 222, 179, 0.207);
+}
+.section3 .info{
+    padding-top: 3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.section3 .course .web, .cloud{
+    width: 50%;
+}
+.section3 .course{
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+}
+.section3 .course img{
+    height: 35vh;
+    width: 100%;
+}
+.section3 .course h1{
+    font-size: 1.7rem;
+    margin-top: 20px;
+}
+.section3 .course .web{
+    margin-right: 50px;
+}
+.section3 .course .web p{
+    line-height: 1.3rem;
+    margin-top: 20px;
+}
+.section3 .course .cloud p:first-of-type{
+    margin-top: 20px;
+}
+.section3 .course .cloud p{
+    line-height: 1.3rem;
+}
+.section3 .course .web ul{
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.section3 .course .cloud ul{
+    margin-top: 40px;
+    font-weight: bolder;
+}
+.section3 .course .web a, .cloud a, .section4 a{
+    text-decoration: none;
+    margin-top: 22px;
+    display: block;
+    height: 45px;
+    width: 103px;
+    padding: 16px 13px;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.section3 .course .web a{
+    background-color: #ff9d8f;
+}
+.section3 .course .cloud a, .section4 a{
+    background-color: aquamarine;
+}
+.section3 .course .cloud a:hover{
+    background-color: #ff9d8f;
+}
+.section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.601);
+    color: white;
+    padding: 4rem;
+}
+.section4 h3{
+    font-size: 25px;
+}
+.section4 a{
+    display: block;
+    text-align: center;
+}
+.section4 a:hover{
+    background-color: #ff9d8f;
+}
+.section4 .features{
+    line-height: 3rem;
+}
+.section5{
+
+background: linear-gradient(to bottom, #E4E5E6, #00416a7a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.section5 h2{
+    text-align: center;
+    padding-top: 3rem;
+}
+.section5 .left{
+    width: 30%;
+}
+.section5 .right{
+    width: 70%;
+}
+.section5 .left img{
+
+}
